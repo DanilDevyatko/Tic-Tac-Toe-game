@@ -20,13 +20,13 @@ export default function Player({ initialName, symbol }) {
     btnCaption = "Save";
   }
 
-    return (
-        <li>
-        <span className="player">
-          {changeablePlayerName}
-          <span className="player-symbol">{symbol}</span>
-        </span>
-        <button onClick={handleEditClick}>{btnCaption}</button>
-      </li>
-    )
+  return (
+    <li>
+      <span className="player">
+        {changeablePlayerName}
+        <span className="player-symbol">{symbol}</span>
+      </span>
+      <button onClick={handleEditClick}>{btnCaption}</button>
+  </li>
+  )
 }
